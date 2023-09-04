@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+}
+
+#navbar {
+    background-color: #0b1460;
+    color: white;
+    height: 35px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+#presentation{
+    background-image: url('librairies/home/bg-1.png');
+    height: 200px;
+}
