@@ -1,13 +1,39 @@
 .presentation {
   height: 750px;
-  background-image: url("assets/landing-top-slider-4.jpg");
   color: white;
   display: flex;
+  background: none;
+  position: relative;
+
+  &__slider {
+    .slider {
+      &__element {
+        position: absolute;
+        height: 100%;
+        z-index: 0;
+        width: 100%;
+        opacity: 0;
+
+        &:nth-child(1) {
+          background-image: url("assets/landing-top-slider-3.jpg");
+        }
+
+        &:nth-child(2) {
+          background-image: url("assets/landing-top-slider-4.jpg");
+        }
+
+        &--current {
+          opacity: 100% !important;
+        }
+      }
+    }
+  }
 
   &__navbar {
     height: 70px;
     display: flex;
     align-items: center;
+    z-index: 1;
 
     h2 {
       margin-left: 20px;
@@ -66,6 +92,11 @@
         content: "";
         background: black;
         margin-right: 7px;
+        transition: 0.2s ease-in-out;
+      }
+
+      &:hover::before {
+        width: 0;
       }
     }
   }

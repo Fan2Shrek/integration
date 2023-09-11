@@ -3,7 +3,7 @@
   justify-content: center;
   flex-direction: column;
 
-  .title {
+  &__title {
     margin-top: 200px;
     text-align: center;
 
@@ -28,22 +28,27 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
 
-    .small-project {
-      margin-inline: 40px;
-      margin-block: 20px;
+  &__card {
+    margin-inline: 40px;
+    margin-block: 20px;
 
-      img {
-        width: 480px;
+    img {
+      width: 480px;
+      border: 5px solid white;
+
+      &:hover {
+        border: 5px solid rgba(0, 0, 0, 0.075);
       }
+    }
 
-      h6 {
-        text-align: left;
-        font-weight: 100;
-        text-transform: uppercase;
-        font-size: 27px;
-        margin-top: 14px;
-      }
+    h6 {
+      text-align: left;
+      font-weight: 100;
+      text-transform: uppercase;
+      font-size: 27px;
+      margin-top: 14px;
     }
   }
 }
@@ -54,8 +59,12 @@
       width: 260px !important;
     }
 
-    .small-project {
+    &__card {
       width: 90%;
+    }
+
+    &__container {
+      justify-content: center;
     }
   }
 }

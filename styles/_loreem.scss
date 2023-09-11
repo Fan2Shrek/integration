@@ -47,6 +47,11 @@
         content: "";
         background: white;
         margin-right: 7px;
+        transition: 0.2s ease-in-out;
+      }
+
+      &:hover::before {
+        width: 0;
       }
     }
   }

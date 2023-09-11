@@ -1,4 +1,4 @@
-footer {
+.footer {
   margin-top: 200px;
   background-image: url("/assets/landing-bottom-background-1.jpg");
   height: 500px;
@@ -6,7 +6,7 @@ footer {
   align-items: center;
   justify-content: center;
 
-  .footer__content {
+  &__content {
     display: flex;
     flex-direction: column;
     color: white;
@@ -59,20 +59,25 @@ footer {
         content: "";
         background: black;
         margin-right: 7px;
+        transition: 0.2s ease-in-out;
+      }
+
+      &:hover::before {
+        width: 0;
       }
     }
   }
 }
 
 @media screen and (max-width: 768px) {
-  footer {
+  .footer {
     background-position: center;
     background-size: cover;
     height: 100vh;
     background-attachment: fixed;
     background-repeat: no-repeat;
 
-    .footer__content {
+    &__content {
       width: 100%;
       font-size: 7px;
 

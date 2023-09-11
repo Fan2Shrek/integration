@@ -27,34 +27,44 @@
     flex-wrap: wrap;
     justify-content: space-around;
     counter-set: nb;
+  }
 
-    .project {
-      margin-inline: 21px;
-      margin-block: 20px;
+  &__card {
+    margin-inline: 21px;
+    margin-block: 20px;
+    position: relative;
+    counter-increment: nb;
+
+    img {
+      width: 38em;
+    }
+
+    h4 {
+      margin-top: 40px;
+      font-size: 27px;
+      text-transform: uppercase;
+      letter-spacing: 4px;
       position: relative;
-      counter-increment: nb;
+    }
 
-      img {
-        width: 670px;
-      }
+    &:hover {
+    }
 
-      h4 {
-        margin-top: 40px;
-        font-size: 27px;
-        text-transform: uppercase;
-        letter-spacing: 4px;
-        position: relative;
-      }
+    &:before {
+      content: "";
+      width: 7px;
+      height: 1px;
+      background-color: black;
+    }
 
-      &:after {
-        content: "0" counter(nb);
-        z-index: -1;
-        color: antiquewhite;
-        font-size: 180px;
-        position: relative;
-        bottom: 119px;
-        left: 55px;
-      }
+    &:after {
+      content: "0" counter(nb);
+      z-index: -1;
+      color: antiquewhite;
+      font-size: 180px;
+      position: relative;
+      bottom: 119px;
+      left: 55px;
     }
   }
 }
