@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  // border: 1px red solid;
+}
+
+@import "styles/presentation.scss";
+@import "styles/projects.scss";
+@import "styles/test.scss";
+@import "styles/project-re.scss";
+
+footer {
+  margin-top: 200px;
+  background-image: url("/assets/landing-bottom-background-1.jpg");
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  #footer-content {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    width: 50%;
+
+    h2 {
+      text-transform: uppercase;
+      font-family: "Montserrat", sans-serif;
+      font-size: 58px;
+      font-weight: 900;
+      letter-spacing: 3px;
+      margin-top: 7px;
+      margin-block: 40px;
+    }
+
+    h4 {
+      font-family: "Nont serif", sans-serif;
+      font-size: 24px;
+      font-style: italic;
+    }
+
+    p {
+      font-size: 30px;
+    }
+
+    .btn {
+      color: black;
+      background-color: white;
+      text-transform: uppercase;
+      font-size: 17px;
+      letter-spacing: 2px;
+      width: 350px;
+      height: 55px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      align-self: center;
+
+      p {
+        font-family: "Monserrat", sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+      }
+
+      &:before {
+        width: 10px;
+        height: 2px;
+        content: "";
+        background: black;
+        margin-right: 7px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    #footer-content {
+      width: 100%;
+      font-size: 7px;
+
+      h6 {
+        font-size: 14px;
+      }
+
+      h2 {
+        font-size: 28px;
+      }
+
+      p {
+        font-size: 12px;
+      }
+
+      .btn {
+        width: 90%;
+      }
+    }
+  }
+
+  #more-projects {
+    img {
+      width: 260px !important;
+    }
+
+    .small-project {
+      width: 90%;
+    }
+  }
+
+  #test {
+    .btn {
+      width: 100% !important;
+    }
+  }
+
+  #projects {
+    height: 2600px;
+
+    img {
+      width: 280px !important;
+    }
+
+    h4 {
+      font-size: 14px !important;
+    }
+  }
+
+  #test {
+    .test-images {
+      display: none;
+    }
+
+    .test-presentation {
+      width: 95% !important;
+      text-align: center;
+
+      h2 {
+        margin-block: 20px;
+        font-size: 35px;
+      }
+    }
+  }
+
+  #presentation {
+    width: 100% !important;
+  }
+}

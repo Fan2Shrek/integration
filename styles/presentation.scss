@@ -1,0 +1,72 @@
+#navbar {
+  height: 70px;
+  display: flex;
+  align-items: center;
+
+  h2 {
+    margin-left: 20px;
+    font-family: "Noto serif", sans-serif;
+    font-style: italic;
+    letter-spacing: 1.5px;
+  }
+}
+
+#home {
+  height: 750px;
+  background-image: url("assets/landing-top-slider-4.jpg");
+  color: white;
+  display: flex;
+
+  #presentation {
+    align-self: center;
+    width: 50%;
+    text-align: center;
+    font-size: 150%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+
+    h2 {
+      font-weight: 100;
+      font-style: italic;
+    }
+
+    h1 {
+      font-size: 70px;
+      font-family: "Monserrat", sans-serif;
+      text-transform: uppercase;
+      margin-block: 20px;
+    }
+
+    .btn {
+      color: black;
+      background-color: white;
+      text-transform: uppercase;
+      font-size: 17px;
+      letter-spacing: 2px;
+      width: 300px;
+      height: 55px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      align-self: center;
+
+      p {
+        font-family: "Monserrat", sans-serif;
+        font-weight: 500;
+      }
+
+      &:before {
+        width: 10px;
+        height: 2px;
+        content: "";
+        background: black;
+        margin-right: 7px;
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+#projects {
+  height: 2300px;
+  padding-top: 50px;
+
+  .main {
+    margin-left: 40px;
+
+    h2 {
+      text-transform: uppercase;
+      font-family: "Montserrat", sans-serif;
+      font-size: 37px;
+      letter-spacing: 3px;
+      margin-top: 7px;
+    }
+
+    h4 {
+      color: rgb(255, 187, 0);
+      font-family: "Nont serif", sans-serif;
+      font-size: 24px;
+      font-style: italic;
+    }
+  }
+
+  #project-container {
+    margin-top: 42px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    counter-set: nb;
+
+    .project {
+      margin-inline: 21px;
+      margin-block: 20px;
+      position: relative;
+      counter-increment: nb;
+
+      img {
+        width: 670px;
+      }
+
+      h4 {
+        margin-top: 40px;
+        font-size: 27px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        position: relative;
+      }
+
+      &:after {
+        content: "0" counter(nb);
+        z-index: -1;
+        color: antiquewhite;
+        font-size: 180px;
+        position: relative;
+        bottom: 119px;
+        left: 55px;
+      }
+    }
+  }
+}

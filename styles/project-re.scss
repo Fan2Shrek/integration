@@ -1,0 +1,49 @@
+#more-projects {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  .title {
+    margin-top: 200px;
+    text-align: center;
+
+    h2 {
+      text-transform: uppercase;
+      font-family: "Montserrat", sans-serif;
+      font-size: 58px;
+      letter-spacing: 3px;
+      margin-top: 7px;
+    }
+
+    h4 {
+      color: rgb(255, 187, 0);
+      font-family: "Nont serif", sans-serif;
+      font-size: 24px;
+      font-style: italic;
+    }
+  }
+
+  .pro-container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .small-project {
+      margin-inline: 40px;
+      margin-block: 20px;
+
+      img {
+        width: 480px;
+      }
+
+      h6 {
+        text-align: left;
+        font-weight: 100;
+        text-transform: uppercase;
+        font-size: 27px;
+        margin-top: 14px;
+      }
+    }
+  }
+}
