@@ -1,23 +1,23 @@
-#navbar {
-  height: 70px;
-  display: flex;
-  align-items: center;
-
-  h2 {
-    margin-left: 20px;
-    font-family: "Noto serif", sans-serif;
-    font-style: italic;
-    letter-spacing: 1.5px;
-  }
-}
-
-#home {
+.presentation {
   height: 750px;
   background-image: url("assets/landing-top-slider-4.jpg");
   color: white;
   display: flex;
 
-  #presentation {
+  &__navbar {
+    height: 70px;
+    display: flex;
+    align-items: center;
+
+    h2 {
+      margin-left: 20px;
+      font-family: "Noto serif", sans-serif;
+      font-style: italic;
+      letter-spacing: 1.5px;
+    }
+  }
+
+  &__text {
     align-self: center;
     width: 50%;
     text-align: center;
@@ -66,6 +66,18 @@
         content: "";
         background: black;
         margin-right: 7px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .presentation {
+    width: 100% !important;
+
+    &__text {
+      p {
+        font-size: 20px;
       }
     }
   }

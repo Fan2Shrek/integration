@@ -1,4 +1,4 @@
-#more-projects {
+.more-projects {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -23,7 +23,7 @@
     }
   }
 
-  .pro-container {
+  &__container {
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -44,6 +44,18 @@
         font-size: 27px;
         margin-top: 14px;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .more-projects {
+    img {
+      width: 260px !important;
+    }
+
+    .small-project {
+      width: 90%;
     }
   }
 }

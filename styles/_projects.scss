@@ -1,8 +1,8 @@
-#projects {
+.projects {
   height: 2300px;
   padding-top: 50px;
 
-  .main {
+  &__text {
     margin-left: 40px;
 
     h2 {
@@ -21,7 +21,7 @@
     }
   }
 
-  #project-container {
+  &__container {
     margin-top: 42px;
     display: flex;
     flex-wrap: wrap;
@@ -55,6 +55,20 @@
         bottom: 119px;
         left: 55px;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .projects {
+    height: 2600px;
+
+    img {
+      width: 280px !important;
+    }
+
+    h4 {
+      font-size: 14px !important;
     }
   }
 }

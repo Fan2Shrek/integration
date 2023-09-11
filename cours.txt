@@ -1,0 +1,19 @@
+Normaliser :
+
+Rendre son code sur tout les navigateurs
+
+Bonnes pratiques: 
+
+- Reset 
+- Element
+- Objet et abstractions
+- Composants
+- Ajouts de style
+
+
+Notation BEM VS Objet
+
+REM supporte le zoom
+
+em -> div précédente
+rem -> relative
