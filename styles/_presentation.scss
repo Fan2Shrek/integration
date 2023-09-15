@@ -1,5 +1,5 @@
 .presentation {
-  height: 750px;
+  height: 90%;
   color: white;
   display: flex;
   background: none;
@@ -13,6 +13,8 @@
         z-index: 0;
         width: 100%;
         opacity: 0;
+        background-position: center;
+        background-size: cover;
 
         &:nth-child(1) {
           background-image: url("assets/landing-top-slider-3.jpg");
@@ -23,7 +25,7 @@
         }
 
         &--current {
-          opacity: 100% !important;
+          opacity: 100%;
         }
       }
     }

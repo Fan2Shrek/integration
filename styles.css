@@ -3,7 +3,7 @@
 }
 
 .presentation {
-  height: 750px;
+  height: 90%;
   color: white;
   display: flex;
   background: none;
@@ -15,6 +15,8 @@
   z-index: 0;
   width: 100%;
   opacity: 0;
+  background-position: center;
+  background-size: cover;
 }
 .presentation__slider .slider__element:nth-child(1) {
   background-image: url("assets/landing-top-slider-3.jpg");
@@ -23,7 +25,7 @@
   background-image: url("assets/landing-top-slider-4.jpg");
 }
 .presentation__slider .slider__element--current {
-  opacity: 100% !important;
+  opacity: 100%;
 }
 .presentation__navbar {
   height: 70px;
@@ -98,7 +100,6 @@
   }
 }
 .projects {
-  height: 2300px;
   padding-top: 50px;
 }
 .projects__text {
@@ -157,9 +158,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  .projects {
-    height: 2600px;
-  }
   .projects img {
     width: 280px !important;
   }
@@ -239,7 +237,7 @@
   right: 110px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .loreem .btn {
     width: 100% !important;
   }
@@ -281,7 +279,7 @@
   margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 .more-projects__card {
   margin-inline: 40px;
@@ -304,10 +302,9 @@
 
 @media screen and (max-width: 768px) {
   .more-projects img {
-    width: 260px !important;
-  }
-  .more-projects__card {
-    width: 90%;
+    width: 300px !important;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .more-projects__container {
     justify-content: center;
@@ -316,7 +313,9 @@
 .footer {
   margin-top: 200px;
   background-image: url("/assets/landing-bottom-background-1.jpg");
-  height: 500px;
+  background-position: center;
+  background-size: cover;
+  height: 90%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -343,7 +342,7 @@
   font-style: italic;
 }
 .footer__content p {
-  font-size: 30px;
+  font-size: 27px;
 }
 .footer__content .btn {
   color: black;
@@ -378,9 +377,7 @@
 
 @media screen and (max-width: 768px) {
   .footer {
-    background-position: center;
     background-size: cover;
-    height: 100vh;
     background-attachment: fixed;
     background-repeat: no-repeat;
   }
@@ -395,7 +392,7 @@
     font-size: 28px;
   }
   .footer__content p {
-    font-size: 12px;
+    font-size: 18px;
   }
   .footer__content .btn {
     width: 90%;

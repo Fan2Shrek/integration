@@ -27,7 +27,7 @@
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   &__card {
@@ -56,11 +56,8 @@
 @media screen and (max-width: 768px) {
   .more-projects {
     img {
-      width: 260px !important;
-    }
-
-    &__card {
-      width: 90%;
+      width: 300px !important;
+      object-fit: contain;
     }
 
     &__container {

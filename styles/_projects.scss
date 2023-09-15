@@ -1,5 +1,4 @@
 .projects {
-  height: 2300px;
   padding-top: 50px;
 
   &__text {
@@ -47,9 +46,6 @@
       position: relative;
     }
 
-    &:hover {
-    }
-
     &:before {
       content: "";
       width: 7px;
@@ -71,8 +67,6 @@
 
 @media screen and (max-width: 768px) {
   .projects {
-    height: 2600px;
-
     img {
       width: 280px !important;
     }
